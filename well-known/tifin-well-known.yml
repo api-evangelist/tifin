@@ -1,0 +1,116 @@
+generated: '2026-08-30'
+method: probed
+source: live HTTP probes of every TIFIN-controlled host found in apis.yml
+note: >-
+  No TIFIN host serves a real /.well-known/ document. tifin.com (WordPress/WP Engine)
+  returns a genuine 404 for every path probed. magnifi.com and tifinwork.com answer HTTP
+  200 with an HTML application shell for EVERY /.well-known/ path including a nonsense
+  control path, so those 200s are catch-alls and NOT documents — no file was saved and no
+  WellKnown or SecurityTxt pointer is emitted. louise.ai did not answer at all.
+hit_count: 0
+hosts:
+- host: https://tifin.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  soft_404_control:
+    path: /.well-known/zzz-control-abc
+    status: 404
+    bytes: 92247
+    verdict: honest-404
+- host: https://magnifi.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    verdict: soft-200-html-shell
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    verdict: soft-200-html-shell
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    verdict: soft-200-html-shell
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    verdict: soft-200-html-shell
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    verdict: soft-200-html-shell
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    verdict: soft-200-html-shell
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    verdict: soft-200-html-shell
+  soft_404_control:
+    path: /.well-known/zzz-control-abc
+    status: 200
+    bytes: 67910
+    content_type: text/html; charset=utf-8
+    verdict: catch-all-spa
+- host: https://tifinwork.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    verdict: soft-200-html-shell
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    verdict: soft-200-html-shell
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    verdict: soft-200-html-shell
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    verdict: soft-200-html-shell
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    verdict: soft-200-html-shell
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    verdict: soft-200-html-shell
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    verdict: soft-200-html-shell
+  soft_404_control:
+    path: /.well-known/zzz-control-abc
+    status: 200
+    bytes: 114
+    content_type: text/html
+    verdict: catch-all-stub
+- host: https://louise.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: null
+    verdict: no-response
+  - path: /.well-known/agent-card.json
+    status: null
+    verdict: no-response
+  soft_404_control:
+    path: /.well-known/zzz-control-abc
+    status: null
+    verdict: no-response

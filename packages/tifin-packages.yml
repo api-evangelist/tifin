@@ -1,0 +1,59 @@
+generated: '2026-08-30'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=tifin
+note: >-
+  TIFIN publishes no SDK page, developer portal, or GitHub organization (github.com/tifin,
+  tifin-labs, tifingroup, tifin-ai, magnifi all return 404 from the GitHub API), so these
+  were found by registry search rather than from provider documentation. Both entries are
+  attributed to TIFIN on the strength of the publishing account's corporate email domain,
+  which is the only ownership evidence available. PyPI has no tifin, tifin-sdk or magnifi
+  project (404 on each). No Maven Central, NuGet, pkg.go.dev, RubyGems, Packagist or
+  crates.io artifact was found.
+packages:
+- language: javascript
+  registry: npm
+  name: magnifi-mobile-sdk
+  url: https://www.npmjs.com/package/magnifi-mobile-sdk
+  install: npm install magnifi-mobile-sdk
+  version: 0.1.4
+  published: '2026-03-16'
+  first_published: '2026-02-25'
+  release_count: 5
+  license: MIT
+  official: true
+  kind: sdk
+  description: Magnifi Mobile SDK for React Native — embed Magnifi AI advisor in your app
+  ownership_evidence: >-
+    Sole npm maintainer is the account "magnifi2" registered to kumar.ravi@tifin.com, a
+    TIFIN corporate address, and the package wraps Magnifi, a TIFIN product.
+  caveat: >-
+    The declared repository (github.com/nicholasgasior/mobile-sdk) is a personal account
+    and returns 404 from the GitHub API, the package ships no README, and no TIFIN or
+    Magnifi web property links to it. Treat as first-party-published but undocumented.
+- language: javascript
+  registry: npm
+  name: '@tifinag/ui'
+  url: https://www.npmjs.com/package/@tifinag/ui
+  install: npm install @tifinag/ui
+  version: 0.2.2
+  published: '2025-04-02'
+  first_published: '2025-04-02'
+  release_count: 4
+  license: MIT
+  official: true
+  kind: ui-components
+  description: A React component library with shadcn/ui components
+  ownership_evidence: >-
+    Scope @tifinag matches TIFIN AG; sole npm maintainer is the account "tifinag"
+    registered to shakil.abbas@tifinag.com, a TIFIN AG corporate address.
+  caveat: >-
+    This is an internal design-system component library, not an API client. It is NOT
+    counted toward the SDK signal. Last published 2025-04-02, roughly seventeen months
+    stale as of this pass.
+registries_probed:
+- registry: npm
+  status: 200
+  finding: 2 first-party packages
+- registry: pypi
+  status: 404
+  finding: no tifin / tifin-sdk / magnifi project

@@ -1,0 +1,25 @@
+generated: '2026-08-30'
+method: searched
+source: https://tifin.com/
+limit_count: 0
+note: >-
+  No rate limits are documented because TIFIN publishes no developer documentation. There
+  is no developer portal, API reference, or machine-readable contract on any TIFIN-controlled
+  host: developer.tifin.com, docs.tifin.com, api.tifin.com, developers.tifin.com,
+  docs.tifin.ai and api.tifin.ai do not resolve, and api.magnifi.com resolves but returns
+  404 for /openapi.json, /swagger.json, /docs, /api-docs and /redoc. TIFIN's own press
+  material states its AI capabilities "are also available in a suite of APIs that can plug
+  into existing wealthtech stacks", but nothing about those APIs — limits, headers, or
+  exhaustion behavior — is published publicly.
+rate_limits: []
+headers: []
+evidence:
+- url: https://developer.tifin.com/
+  status: null
+  finding: DNS does not resolve
+- url: https://api.tifin.com/
+  status: null
+  finding: DNS does not resolve
+- url: https://api.magnifi.com/openapi.json
+  status: 404
+  finding: host resolves, no spec served

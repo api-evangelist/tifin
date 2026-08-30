@@ -1,17 +1,36 @@
 aid: tifin
-name: Tifin
-description: 'Tifin is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: TIFIN
+description: 'TIFIN is a Boulder, Colorado based fintech company founded in 2018 by Dr. Vinay
+  Nair that builds AI-driven wealth technology for financial advisors, RIAs, broker-dealers,
+  asset managers and insurance firms. Its platforms span TIFIN.AI (an agentic operating
+  system consolidating the group''s AI businesses for wealth and asset management workflows),
+  TIFIN Wealth (investment proposal, risk-capacity and client-personalization tooling that
+  integrates with Fidelity, BNY Pershing, Black Diamond, Salesforce, Wealthbox, Redtail,
+  Orion and iRebal), TIFIN AMP/AG for asset-manager distribution intelligence, TIFIN Give
+  for charitable giving accounts, TIFIN @Work for workplace financial wellness, and Magnifi,
+  an AI investing assistant. TIFIN incubated 55ip (sold to J.P. Morgan) and Paralel, and
+  announced a joint venture, TIFIN.AI, with J.P. Morgan Asset Management. The company
+  states its AI capabilities are available as APIs that plug into existing wealthtech
+  stacks, but publishes no public developer portal, API reference, or machine-readable
+  contract; access is gated behind a "Get access" request form.'
 url: https://raw.githubusercontent.com/api-evangelist/tifin/refs/heads/main/apis.yml
+image: https://tifin.com/wp-content/uploads/TIFIN_SmallSizes_K.svg
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-30'
 modified: '2026-08-30'
 tags:
 - Company
+- Financial Services
+- Wealth Management
+- Asset Management
+- Artificial Intelligence
+- Fintech
+- Wealthtech
+- Financial Advisors
+- Investment Management
+- Insurance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +38,64 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tifin-domain-security.yml
 - type: Website
+  url: https://tifin.com/
+- type: About
+  url: https://tifin.com/company/
+- type: Products
+  url: https://tifin.com/products/
+- type: Blog
+  url: https://tifin.com/resources/
+- type: News
+  url: https://tifin.com/news/
+- type: SignUp
+  url: https://tifin.com/product/tifinai/request-access/
+- type: TermsOfService
+  url: https://tifin.com/terms-conditions/
+- type: PrivacyPolicy
+  url: https://tifin.com/privacy-policy/
+- type: Careers
+  url: https://tifin.com/careers/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/tifin/
+- type: SecondaryMarketListing
   url: https://www.hiive.com/securities/tifin-stock
+- type: LLMsTxt
+  url: llms/tifin-llms.txt
+- type: Packages
+  url: packages/tifin-packages.yml
+- type: SDKs
+  url: packages/tifin-packages.yml
+- type: Plans
+  url: plans/tifin-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/tifin-rate-limits.yml
+x-enrichment:
+  date: '2026-08-30'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    TIFIN markets its AI capabilities as "a suite of APIs that can plug into existing
+    wealthtech stacks", but every product page ends at a "Get access" request form and no
+    developer host exists at all — developer.tifin.com, docs.tifin.com, api.tifin.com,
+    developers.tifin.com, docs.tifin.ai and api.tifin.ai do not resolve in DNS, and the
+    full eight-page tifin.com sitemap contains no developer, pricing, or documentation
+    page.
+  evidence:
+  - url: https://tifin.com/product/tifinai/request-access/
+    status: 200
+  - url: https://tifin.com/page-sitemap.xml
+    status: 200
+  - url: https://developer.tifin.com/
+    status: 0
+  - url: https://api.tifin.com/
+    status: 0
+  - url: https://api.magnifi.com/openapi.json
+    status: 404
+  checked: '2026-08-30'
