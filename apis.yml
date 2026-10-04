@@ -35,7 +35,7 @@ created: '2026-08-30'
 modified: '2026-08-30'
 tags:
 - Company
-- Financial-Services
+- Financial Services
 - Wealth Management
 - Asset Management
 - Artificial Intelligence
@@ -55,6 +55,7 @@ tags_raw:
 - Financial Advisors
 - Investment Management
 - Insurance
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
