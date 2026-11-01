@@ -1,4 +1,4 @@
-# Tifin
+# TIFIN
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Tifin is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/tifin-stock
+TIFIN is a Boulder, Colorado based fintech company founded in 2018 by Dr. Vinay Nair that builds AI-driven wealth technology for financial advisors, RIAs, broker-dealers, asset managers and insurance firms. Its platforms span TIFIN.AI (an agentic operating system consolidating the group's AI businesses for wealth and asset management workflows), TIFIN Wealth (investment proposal, risk-capacity and client-personalization tooling that integrates with Fidelity, BNY Pershing, Black Diamond, Salesforce, Wealthbox, Redtail, Orion and iRebal), TIFIN AMP/AG for asset-manager distribution intelligence, TIFIN Give for charitable giving accounts, TIFIN @Work for workplace financial wellness, and Magnifi, an AI investing assistant. TIFIN incubated 55ip (sold to J.P. Morgan) and Paralel, and announced a joint venture, TIFIN.AI, with J.P. Morgan Asset Management. The company states its AI capabilities are available as APIs that plug into existing wealthtech stacks, but publishes no public developer portal, API reference, or machine-readable contract; access is gated behind a "Get access" request form.
+
+**Areas:** Company · Financial Services · Wealth Management · Asset Management · Artificial Intelligence · Fintech · WealthTech · Financial Advisors · Investment Management · Insurance
+
+## TIFIN on APIs.io
+
+Everything profiled for TIFIN is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/tifin/](https://apis.io/providers/tifin/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Tifin Domain Security](https://apis.io/security/tifin/tifin-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Tifin Plans Pricing](https://apis.io/plans/tifin/tifin-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Tifin Rate Limits](https://apis.io/rate-limits/tifin/tifin-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://tifin.com/)
+- [Sign up](https://tifin.com/product/tifinai/request-access/)
+- [Blog](https://tifin.com/resources/)
+- [Terms of service](https://tifin.com/terms-conditions/)
+- [Privacy policy](https://tifin.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 13.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 34.2 |
+
+**Agent readiness 5.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.5** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/tifin/](https://apis.io/providers/tifin/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for TIFIN: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/tifin/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
